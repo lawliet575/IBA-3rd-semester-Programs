@@ -1,0 +1,8 @@
+No.of Inputs    NumbertoSearch      BinaryComp.    BinaryTime(Nano-sec)    LinearComp.    LinearTime(Nano-sec)
+10                                       5                                                3                                        24700                                      6                      215500 
+                       
+100                                    78                                             6                                        28700                                     79                    225500                                     
+
+1000                                482                                            9                                        25300                                    483                  200000
+
+5000                             3500                                          11                                      25100                                    3501                 273100                                  
