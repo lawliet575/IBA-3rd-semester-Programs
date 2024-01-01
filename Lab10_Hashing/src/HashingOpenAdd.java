@@ -1,5 +1,5 @@
 public class HashingOpenAdd {
-    String[] buckets;
+    String[] buckets; //BUCKETS --> [null,null,null,null,.......]
     static int totalcollisions=0;
 
     HashingOpenAdd(int s){
@@ -16,10 +16,10 @@ public class HashingOpenAdd {
         return sum;
     }
 
-    private int Hash(int sum){
+    private int Hash(int val){
         //int bi=Integer.hashCode(sum);
         //return Math.abs(bi) % buckets.length;
-        return (sum%buckets.length);
+        return (val % buckets.length);
     }
 
     private int Rehash_L(int sum,int i){
@@ -67,7 +67,7 @@ public class HashingOpenAdd {
             buckets[bi]=null;
             return true;//deleted
         }
-         bi=Rehash_L(sum, i);
+         bi=Rehash_L(sum, i);//searching by linear probing
          i++; 
       }
 

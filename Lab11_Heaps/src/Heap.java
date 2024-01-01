@@ -68,7 +68,7 @@ public class Heap<T extends Comparable<T>> {
         int left=(2*index)+1;
         int right=(2*index)+2;
 
-        if(left<size && right<size){//means left and right will never be null
+        if(left<size && right<size){//means left and right will never be null extra security null check
 
             if(arr[right].compareTo(arr[index])>0){//right>index
             //swap right and index

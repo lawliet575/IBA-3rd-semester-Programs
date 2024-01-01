@@ -5,7 +5,7 @@ public class HashT<T> {
     HashT(int s){ //constructor
         buckets=  new LinkedList[s+s/3];
 
-        //initialize
+        //initialize all the LL inside the buckets
         for (int i = 0; i < buckets.length; i++) {
             this.buckets[i]=new LinkedList<>();
         }
@@ -17,7 +17,7 @@ public class HashT<T> {
         int bi=obj.hashCode();
         return Math.abs(bi) % this.buckets.length;
     
-         //wese its (key % buckets.length
+         //wese its (key % buckets.length, since key always an int value
         //always returns a value b/w 0 and n-1
 
     }
